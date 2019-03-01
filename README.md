@@ -1,4 +1,4 @@
-# rg-matix
+# rg-matrix
 Calculate pairwise genetic correlations between a set of GWAS summary statistics  
 Version 2.0.0  
 
