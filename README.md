@@ -7,12 +7,11 @@ Input:
   - Python version >=2.7 & <3; preferably 2.7.9  
 
 Output:  
-3x tab-delmited text files; N rows by (N+1) columns:  
-  - rg.tab:	symmetric matrix of genetic correlations  
-  - se.tab:	symmetric matrix of SE's for the genetic correlations  
-  - cti.tab:	symmetric matrix of cross-trait-intercepts  
-
-1x tab-delimited text file containing all estimated values reported by LDSC; (N+1) rows (including header) by 12 columns  
+ - 3x tab-delmited text files; N rows by (N+1) columns:  
+   - rg.tab:  symmetric matrix of genetic correlations  
+   - se.tab:  symmetric matrix of SE's for the genetic correlations  
+   - cti.tab: symmetric matrix of cross-trait-intercepts  
+ - 1x tab-delimited text file containing all estimated values reported by LDSC; (N+1) rows (including header) by 12 columns  
 
 How to use:  
  1) copy this script and all sumstats to the working directory  
