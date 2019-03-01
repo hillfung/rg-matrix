@@ -17,15 +17,38 @@ Output:
 How to use:  
  1) copy this script and all sumstats to the working directory  
  2) run the script using the following command:  
- ```bash script.make_rg_mat.sh```  
+ ```
+ bash script.make_rg_mat.sh
+ ```  
 
 NOTE: the script assumes no files ending on ".sumstats.gz" are present except for the GWASs for which the genetic correlations are to be calculated
 
 Additional flags:  
- ```-c``` -- restrict the diagonal of both rg.tab and cti.tab to all 1's, and restrict the diagonal of se.tab to 0's  
- ```-s``` -- save all LDSC log-files  
- ```-n [value]``` -- add prefix to output files  
- ```-p [value]``` -- change the number of parallel runs of LDSC to start; default: 5  
- ```-l [value]``` -- supply the location of ldsc.py (see https://github.com/bulik/ldsc )  
- ```-r [value]``` -- indicate which files to use as reference LDscores (see https://github.com/bulik/ldsc )  
- ```-w [value]``` -- indicate which files to use as regression weights (see https://github.com/bulik/ldsc )  
+Restrict the diagonal of both rg.tab and cti.tab to all 1's, and restrict the diagonal of se.tab to 0's
+```
+-c
+```
+Save LDSC log-files
+```
+-s
+```
+Add prefix to output files
+```
+-n [value]
+```
+Change the number of parallel runs of LDSC to start; default 5
+```
+-p [value]
+```
+Supply the location of LDSC.py (see https://github.com/bulik/ldsc)
+```
+-l [value]
+```
+Indicate which files to use as reference LD scores (see https://github.com/bulik/ldsc)
+```
+-r [value]
+```
+Indicate which files to use as regression weights (see https://github.com/bulik/ldsc)
+```
+-w [value]
+```
