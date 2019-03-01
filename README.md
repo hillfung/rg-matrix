@@ -22,16 +22,22 @@ NOTE: the script assumes no files ending on ".sumstats.gz" are present except fo
 
 ## Additional flags: ##
 Restrict the diagonal of both rg.tab and cti.tab to all 1's, and restrict the diagonal of se.tab to 0's  
-```-c```  
+```-c```
+
 Save LDSC log-files  
-```-s```  
+```-s```
+
 Add prefix to output files  
-```-n [value]```  
+```-n [value]```
+
 Change the number of parallel runs of LDSC to start; default 5  
-```-p [value]```  
+```-p [value]```
+
 Supply the location of LDSC.py (see https://github.com/bulik/ldsc)  
-```-l [value]```  
+```-l [value]```
+
 Indicate which files to use as reference LD scores (see https://github.com/bulik/ldsc)  
-```-r [value]```  
+```-r [value]```
+
 Indicate which files to use as regression weights (see https://github.com/bulik/ldsc)  
 ```-w [value]```
