@@ -1,5 +1,5 @@
 # rg-matix
-This script calculates pairwise genetic correlations between a set of GWAS summary statistics (version 2.0.0)
+Calculate pairwise genetic correlations between a set of GWAS summary statistics (version 2.0.0)
 Last edited: 01-MAR-2019
 
 Input: "munged" GWAS summary statistics, see https://github.com/bulik/ldsc
