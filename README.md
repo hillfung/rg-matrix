@@ -1,6 +1,8 @@
 # rg-matix
 Calculate pairwise genetic correlations between a set of GWAS summary statistics
+
 Version 2.0.0
+
 Last edited: 01-MAR-2019
 
 Input: "munged" GWAS summary statistics, see https://github.com/bulik/ldsc
