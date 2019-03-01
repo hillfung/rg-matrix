@@ -10,7 +10,8 @@ Output:
  3x tab-delmited text files; N rows by (N+1) columns:  
   - rg.tab:	symmetric matrix of genetic correlations  
   - se.tab:	symmetric matrix of SE's for the genetic correlations  
-  - cti.tab:	symmetric matrix of cross-trait-intercepts    
+  - cti.tab:	symmetric matrix of cross-trait-intercepts  
+ 
  1x tab-delimited text file containing all estimated values reported by LDSC; (N+1) rows (including header) by 12 columns  
 
 How to use:  
@@ -23,9 +24,9 @@ Additional flags:
  -s			-- save all LDSC log-files  
  -n [value]	-- add prefix to output files  
  -p [value]	-- change the number of parallel runs of LDSC to start; default: 5  
- -l [value]	-- supply the location of ldsc.py (see https://github.com/bulik/ldsc )
- -r [value]	-- indicate which files to use as reference LDscores (see https://github.com/bulik/ldsc ) 
- -w [value]	-- indicate which files to use as regression weights (see https://github.com/bulik/ldsc ) 
+ -l [value]	-- supply the location of ldsc.py (see https://github.com/bulik/ldsc )  
+ -r [value]	-- indicate which files to use as reference LDscores (see https://github.com/bulik/ldsc )  
+ -w [value]	-- indicate which files to use as regression weights (see https://github.com/bulik/ldsc )  
 
 Example command to run the script with additional flags:  
  bash script.make_rg_mat.sh -scp 8 -l ~/ldsc/ldsc.py  
