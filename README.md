@@ -1,6 +1,6 @@
 # rg-matrix
-Calculate pairwise genetic correlations between a set of GWAS summary statistics  
-Version 2.0.0  
+Create a matrix of genetic correlations between a set of GWAS summary statistics  
+Current version: 2.0.0  
 
 ## Input: ##
   - "munged" GWAS summary statistics, see https://github.com/bulik/ldsc  
