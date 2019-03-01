@@ -2,8 +2,9 @@
 Calculate pairwise genetic correlations between a set of GWAS summary statistics  
 Version 2.0.0  
 
-Input: "munged" GWAS summary statistics, see https://github.com/bulik/ldsc  
-NOTE: script further requires Python version >=2.7 & <3; preferably 2.7.9  
+Input:  
+  - "munged" GWAS summary statistics, see https://github.com/bulik/ldsc  
+  - Python version >=2.7 & <3; preferably 2.7.9  
 
 Output:  
 3x tab-delmited text files; N rows by (N+1) columns:  
