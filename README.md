@@ -17,7 +17,7 @@ Current version: 2.1.0
 ## How to use: ##
  1. copy this script and all sumstats to the working directory
  2. run the script using the following command:
- ```bash script.make_rg_mat.sh```
+ ```bash make_rg_mat.sh```
 
 The script requires at least the three following flags:
 
