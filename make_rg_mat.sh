@@ -1,4 +1,5 @@
 #!/bin/bash
+# version 2.1.0
 
 function _check_ld_variable {
 	local VAR_NAME=${1}
