@@ -15,33 +15,32 @@ Current version: 2.1.0
 - 1x tab-delimited text file containing all estimated values reported by LDSC; (N+1) rows (including header) by 12 columns  
 
 ## How to use: ##
- 1. copy this script and all sumstats to the working directory
- 2. run the script using the following command:
- ```bash make_rg_mat.sh```
+ Run the script using the following command: ```bash make_rg_mat.sh```
 
 The script requires at least the three following flags:
 
 Supply the location of LDSC.py (see https://github.com/bulik/ldsc)  
-```-l [value]```
+`-l [value]`
 
 Indicate which files to use as reference LD scores (see https://github.com/bulik/ldsc)  
-```-r [value]```
+`-r [value]`
 
 Indicate which files to use as regression weights (see https://github.com/bulik/ldsc)  
-```-w [value]```
+`-w [value]`
 
 ## Additional flags: ##
-Restrict the diagonal of both rg.tab and cti.tab to all 1's, and restrict the diagonal of se.tab to 0's  
-```-c```
+Restrict the diagonal of both rg.tab and cti.tab to all 1's, and restrict the diagonal of rg_se.tab and cti_se.tab to 0's  
+`-c`
 
 Save LDSC log-files  
-```-s```
+`-s`
 
 Add prefix to output files  
-```-n [value]```
+`-n [value]`
 
 Change the number of parallel runs of LDSC to start; default 5  
-```-p [value]```
+`-p [value]`
 
-Input directory
-```-i [value]```
+Input directory; defaults to working directory  
+`-i [value]`
+
