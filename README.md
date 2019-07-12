@@ -1,6 +1,6 @@
 # rg-matrix
 Create a matrix of genetic correlations between a set of GWAS summary statistics  
-Current version: 2.1.0  
+Current version: 2.2.0  
 
 ## Input: ##
   - "munged" GWAS summary statistics, see https://github.com/bulik/ldsc  
@@ -10,6 +10,7 @@ Current version: 2.1.0
 - 4x tab-delmited text files; N rows by (N+1) columns:  
   - rg.tab:  symmetric matrix of genetic correlations  
   - rg_se.tab:  symmetric matrix of SE's for the genetic correlations  
+  - rg_p.tab: symmetric matrix of P-values for the genetic correlations
   - cti.tab: symmetric matrix of cross-trait-intercepts  
   - cti_se.tab: symmetric matrix of SE's for the cross-trait-intercepts
 - 1x tab-delimited text file containing all estimated values reported by LDSC; (N+1) rows (including header) by 12 columns  

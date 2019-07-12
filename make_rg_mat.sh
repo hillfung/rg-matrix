@@ -1,5 +1,5 @@
 #!/bin/bash
-# version 2.1.0
+# version 2.2.0
 
 function _check_ld_variable {
 	local VAR_NAME=${1}
@@ -184,7 +184,7 @@ if [[ ! -z ${CALL_FLAGS} ]];then
 else
 	echo -e "\n"
 fi
-for FILE in $(echo "rg.tab rg_se.tab cti.tab cti_se.tab collected_results.tab");do
+for FILE in $(echo "rg.tab rg_se.tab rg_p.tab cti.tab cti_se.tab collected_results.tab");do
 	_rename_existing_file ${FILE}
 done
 
@@ -285,17 +285,18 @@ fi
 echo -en "Constructing the matrices..."
 _construct_matrix 'rg' 1 3
 _construct_matrix 'rg_se' 0 4
+_construct_matrix 'rg_p' NA 6
 _construct_matrix 'cti' 1 11
 _construct_matrix 'cti_se' 0 12
 echo "done"
 
 if [[ ! -z ${PREFIX} ]];then
-	for FILE in $(echo "rg rg_se cti cti_se collected_results");do
+	for FILE in $(echo "rg rg_se rg_p cti cti_se collected_results");do
 		_rename_existing_file ${PREFIX}${FILE}.tab
 		mv ${FILE}.tab ${PREFIX}${FILE}.tab
 	done
 fi
-echo -e "Files are saved as: ${PREFIX}rg.tab, ${PREFIX}rg_se.tab, ${PREFIX}cti.tab, ${PREFIX}cti_se.tab, and collected_results.tab"
+echo -e "Files are saved as: ${PREFIX}rg.tab, ${PREFIX}rg_se.tab, ${PREFIX}cti.tab, ${PREFIX}cti_se.tab, ${PREFIX}pval.tab and collected_results.tab"
 
 rm sumstats.list rg.list
 for SUMSTAT_NUM in $(seq 1 ${NUM_SUMSTATS});do
